@@ -4,44 +4,41 @@
       color: Black;
       font-family: monospace;
     }
+
     h2 {
       color: Black;
       font-family: monospace;
     }
+
     p {
       color: Black;
       font-family: monospace;
       font-size: 15px
     }
+
     </head>
   </style>
-  <body>
-    <h1>SynchroSum</h1>
-    <img
-      src="https://www.researchgate.net/publication/319053998/figure/fig2/AS:554393063497728@1509189014579/The-traffic-flow-data-for-Al-Ghazal-intersection-on-Synchro-Software.png"
-      alt="synchro"
-      width="200"
-      height="200"
-    />
-    <h2>
-      File names must meet the following criteria:
-      <h2 />
-      <ul>
-        <li>Synchro reports must be text files (.txt)</li>
-        <li>Simtraffic reports must be pdfs (.pdf)</li>
-        <ul />
-        <p>Summary file download takes a few seconds after pressing submit..</p>
 
-        <p />
-        <form
-          action="%s/uploadfiles/"
-          enctype="multipart/form-data"
-          method="post"
-        >
-          <input name="files" type="file" multiple />
-          <input type="submit" />
-        </form>
-      </ul>
-    </h2>
-  </body>
+<body>
+  <h1>SynchroSum</h1>
+  <img
+    src="https://www.researchgate.net/publication/319053998/figure/fig2/AS:554393063497728@1509189014579/The-traffic-flow-data-for-Al-Ghazal-intersection-on-Synchro-Software.png"
+    alt="synchro" width="200" height="200" />
+  <h2>
+    File names must meet the following criteria:
+    <h2 />
+    <ul>
+      <li>Synchro reports must be text files (.txt)</li>
+      <li>Simtraffic reports must be pdfs (.pdf)</li>
+      <ul />
+      <p>Summary file download takes a few seconds after pressing submit..</p>
+
+      <p />
+      <form action="%s/uploadfiles/" enctype="multipart/form-data" method="post">
+        <input name="files" type="file" multiple />
+        <input type="submit" />
+      </form>
+    </ul>
+  </h2>
+</body>
 </head>
