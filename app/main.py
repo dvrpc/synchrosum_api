@@ -34,12 +34,22 @@ async def create_upload_files(
     elif len(files) == 2:
         summary = SynchroTxt(cwd + "/" + files[1].filename, files[0].filename)
         filepath = summary.excel_path
-
+    background_tasks.add_task(cleanup)
     return FileResponse(
         filepath,
         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         filename="synchro_sum.xlsx",
     )
+
+
+def cleanup():
+    path = os.getcwd()
+    os.chdir(path)
+    targets = [".xlsx", ".xls", ".pdf", ".txt"]
+    for file in os.listdir(path):
+        for target in targets:
+            if file.endswith(target):
+                os.remove(file)
 
 
 app.mount("/", StaticFiles(directory="app/static",
