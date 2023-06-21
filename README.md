@@ -11,7 +11,7 @@ API for the SynchroSum toolset
 ```
 python3 -m venv ve
 . ve/bin/activate
-pip install -r reqs/requirements_dev.txt
+pip install -r reqs/requirements_base.txt
 ```
 
 ### Development Server
