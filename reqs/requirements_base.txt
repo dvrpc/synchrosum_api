@@ -9,7 +9,7 @@ idna==3.4
 numpy==1.24.3
 openpyxl==3.1.2
 pandas==2.0.2
-planbelt @ git+https://github.com/dvrpc/plan-belt@0.4.3
+planbelt @ git+https://github.com/dvrpc/plan-belt@0.4.4
 pydantic==1.10.8
 python-dateutil==2.8.2
 python-dotenv==1.0.0
